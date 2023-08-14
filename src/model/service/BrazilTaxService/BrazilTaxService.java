@@ -1,6 +1,8 @@
-package model.entities.BrazilTaxService;
+package model.service.BrazilTaxService;
 
-public class BrazilTaxService {
+import model.service.interfaces.TaxService;
+
+public class BrazilTaxService implements TaxService {
 
     public double tax(double amount){
         if(amount <= 100){
